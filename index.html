@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my responsive page</title>
+    <style>
+        
+    
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: microsoft yahei;
+        
+        }
+    
+        #top{
+            background-color: #212529;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 50px;
+            line-height: 50px;
+        }
+        #top ul{
+            display: flex;
+            list-style-type: none;
+        }
+        #top li{
+            margin-right: 10px;
+            color: #aaa;
+        }
+        #main{
+            display: flex;
+            background-color: #212529;
+            padding: 0 50px;
+            align-items: center;
+        }
+        #main-left h2{
+            color: white;
+            font-size: 40px;
+            font-weight: normal;
+            
+        }
+        
+        #main-left h2 span{
+            color: #ffc107;
+
+        }
+        #main-left p{
+            color: white;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            line-height: 2;
+            
+            
+        }
+        #main-left button{
+            background-color: #0d6efd;
+            border: none;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+            margin-bottom: 20px;
+
+        }
+        #main-left img{
+            width: 65%;
+        }
+        #newsletter{
+            background-color: #0d6efd;
+            display: flex;
+            padding: 20px 70px;
+            color: white;
+            font-weight: normal;
+            margin-bottom: 50px;
+        
+          
+        }
+        #newsletter h2{
+            font-weight: normal;
+        }
+
+        #newsletter input {
+            line-height: 40px;
+            width: 70%;
+            padding: 5px;
+            margin: 20px 0;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+              
+            
+        }
+        #newsletter button{
+            background-color: #212529;
+            color: white;
+            margin: 20px 0;
+            width: 10%;
+            line-height: 40px;
+            padding: 5px;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+         
+        #three{
+            padding: 0 50px;
+            display: flex;
+        }
+        #left,#right{
+            background-color: #212529;
+
+        }
+        #mid{
+            background-color: #6c757d;
+        }
+        #three>div{
+            padding: 10px 30px;
+            text-align: center;
+            color: #fff;
+            width:33.33%;
+        }
+        #left a,#right a{
+            color: #fff;
+            background-color: #0d6efd;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 10px;
+            line-height: 40px;
+            padding: 0 15px;
+            border-radius: .25em;
+            
+        }
+        #mid a{
+            background-color: #212529;
+            text-align: center;
+            color: #fff;
+            display: inline-block;
+            margin: 20px 10px;
+            line-height: 40px;
+            padding: 0 15px;
+            text-decoration: none;
+            border-radius: .25em;
+           
+
+
+        }
+        #left,#mid{
+            margin-right: 50px;
+        }
+
+        @media(max-width: 768px){
+            #main{
+                flex-direction: column;
+            }
+           
+            #top{
+                flex-direction: column;
+            }
+            #top ul{
+                flex-direction: column;
+            }
+            
+            #main-left{
+                text-align: center;
+            }
+            #top li{
+                line-height: 30px;
+            }
+
+        }
+            
+
+    
+    
+    
+    </style>
+    
+</head>
+
+<body>
+    <div id="top">
+        <h2> Frontend Bootcamp</h2>
+
+        <ul>
+            <li>Learning</li>
+            <li>questions</li>
+            <li>instructor</li>
+            <li>contact us</li>
+        </ul>
+    </div>
+    <div id="main">
+    <div id="main-left">
+   
+    <h2>Become a Web <span>Developer</span></h2>
+    <p> we focus on teaching our students the latest and greatest technologies to prepare them for the first role. </p>
+    <button>start enrollment</button>
+
+    </div>
+    <img src="./family-confirming-evacuation-site-svgrepo-com.svg" alt="">
+    </div>
+    <div id="newsletter">
+    <h2>sign in for our newsletter</h2>
+    <input type="text">
+    <button>Button</button>
+    </div>
+ 
+    <div id="three">
+    <div id="left">
+    <h2>virtual</h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur itaque quasi molestias maiores magni asperiores.</p>
+    <a href="#">read more</a>
+    </div>
+    <div id="mid">
+    <h2>Hybird</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur itaque quasi molestias maiores magni asperiores. </p>
+    <a href="#">read more</a>
+    </div>
+    <div id="right">
+    <h2> In person</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur itaque quasi molestias maiores magni asperiores.</p>
+    <a href="#">read more</a>
+    </div>
+
+       
+    
+    
+</body>
+</html>
